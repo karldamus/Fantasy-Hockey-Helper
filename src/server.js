@@ -22,12 +22,14 @@ app.get('/addPlayerToRoster', (req, res) => {
     let name = req.query.name;
     let id = req.query.id;
     let team = req.query.team;
+    let teamID = req.query.teamID;
 
     // create player object
     let player = {
         name: name,
         id: id,
-        team: team
+        team: team,
+        teamID: teamID
     };
 
     console.log ("Adding " + player.name + " to MY_ROSTER.json");
@@ -69,8 +71,9 @@ app.get('/getRoster', (req, res) => {
     // parse the MY_ROSTER.json file if it exists
     let rawdata = fs.readFileSync(path.join(__dirname + '/public/data/MY_ROSTER.json'));
     if (rawdata.length > 0) {
-        let roster = JSON.parse(rawdata);
-        res.send(roster);
+        // let roster = JSON.parse(rawdata);
+        // res.send(roster);
+        res.send(rawdata);
     } else {
         res.send("MY_ROSTER.json is empty");
     }
