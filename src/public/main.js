@@ -63,16 +63,6 @@ async function main() {
     for (let [key, value] of Object.entries(numberOfGamesByDate)) {
         console.log(value.dayOfWeek + ": " + value.num);
     }
-
-
-
-    // // print out all dates in teamSchedules
-    // for (let [key, value] of Object.entries(teamSchedules)) {
-    //     for (let date of Object.entries(value.schedule)) {
-    //         console.log(date[1].date);
-    //     }
-    // }
-
 }
 
 async function getDayOfWeekAsWord(date) {
