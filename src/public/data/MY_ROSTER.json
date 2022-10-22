@@ -2,71 +2,85 @@
     "John Tavares": {
         "name": "John Tavares",
         "id": "8475166",
-        "team": "Toronto Maple Leafs"
+        "team": "Toronto Maple Leafs",
+        "teamID": "10"
     },
     "Mikael Granlund": {
         "name": "Mikael Granlund",
         "id": "8475798",
-        "team": "Nashville Predators"
+        "team": "Nashville Predators",
+        "teamID": "18"
     },
     "Josh Norris": {
         "name": "Josh Norris",
         "id": "8480064",
-        "team": "Ottawa Senators"
+        "team": "Ottawa Senators",
+        "teamID": "9"
     },
     "Jared McCann": {
         "name": "Jared McCann",
         "id": "8477955",
-        "team": "Seattle Kraken"
+        "team": "Seattle Kraken",
+        "teamID": "55"
     },
     "Alex Ovechkin": {
         "name": "Alex Ovechkin",
         "id": "8471214",
-        "team": "Washington Capitals"
+        "team": "Washington Capitals",
+        "teamID": "15"
     },
     "Evander Kane": {
         "name": "Evander Kane",
         "id": "8475169",
-        "team": "Edmonton Oilers"
+        "team": "Edmonton Oilers",
+        "teamID": "22"
     },
     "Andrew Mangiapane": {
         "name": "Andrew Mangiapane",
         "id": "8478233",
-        "team": "Calgary Flames"
+        "team": "Calgary Flames",
+        "teamID": "20"
     },
     "William Nylander": {
         "name": "William Nylander",
         "id": "8477939",
-        "team": "Toronto Maple Leafs"
+        "team": "Toronto Maple Leafs",
+        "teamID": "10"
     },
     "Mitchell Marner": {
         "name": "Mitchell Marner",
         "id": "8478483",
-        "team": "Toronto Maple Leafs"
+        "team": "Toronto Maple Leafs",
+        "teamID": "10"
     },
     "Jacob Trouba": {
         "name": "Jacob Trouba",
         "id": "8476885",
-        "team": "New York Rangers"
+        "team": "New York Rangers",
+        "teamID": "3"
     },
     "Mikhail Sergachev": {
         "name": "Mikhail Sergachev",
         "id": "8479410",
-        "team": "Tampa Bay Lightning"
+        "team": "Tampa Bay Lightning",
+        "teamID": "14"
     },
     "Ryan Pulock": {
         "name": "Ryan Pulock",
         "id": "8477506",
-        "team": "New York Islanders"
+        "team": "New York Islanders",
+        "teamID": "2"
     },
     "Hampus Lindholm": {
         "name": "Hampus Lindholm",
         "id": "8476854",
-        "team": "Boston Bruins"
+        "team": "Boston Bruins",
+        "teamID": "6"
     },
     "Noah Dobson": {
         "name": "Noah Dobson",
         "id": "8480865",
-        "team": "New York Islanders"
+        "team": "New York Islanders",
+        "teamID": "2"
     }
 }
