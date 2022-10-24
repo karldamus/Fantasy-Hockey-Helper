@@ -2,5 +2,6 @@ node_modules
 cors-anywhere
 package-lock.json
 package.json
+chrome.bat
 
 secrets.js
