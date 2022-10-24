@@ -1,0 +1,1 @@
+- Make index.html generate the rosters and stats from the Yahoo API and deprecate the NHL API in this instance
