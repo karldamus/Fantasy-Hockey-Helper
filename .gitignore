@@ -1,4 +1,5 @@
 node_modules
+cors-anywhere
 package-lock.json
 package.json
 
