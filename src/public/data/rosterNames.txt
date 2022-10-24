@@ -7,8 +7,12 @@ Evander Kane
 Andrew Mangiapane
 William Nylander
 Mitchell Marner
+Oliver Bjorkstrand
 Jacob Trouba
 Mikhail Sergachev
 Ryan Pulock
 Hampus Lindholm
 Noah Dobson
+Ilya Samsonov
+Alex Nedeljkovic
+Matt Murray
