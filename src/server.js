@@ -6,7 +6,8 @@ const path = require('path');
 const fs = require('fs');
 var qs = require('querystring');
 const YahooFantasy = require('yahoo-fantasy');
-// const secrets = require('./public/secrets.js');
+const secrets = require('./public/secrets.js');
+const { assert } = require('console');
 
 app.use(express.static(__dirname + '/public'));
 
@@ -19,61 +20,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-// get new access token from https://api.login.yahoo.com/oauth2/get_token with the following in the body:
-// secrets.client_id, secrets.client_secret, secrets.redirect_uri, secrets.refresh_token, and grant_type=refresh_token
-// use xhttp to send the request
-// save the new access token to secrets.js
+// add yahooTeam routes
+app.use('/yahooTeam', require('./public/routes/yahooTeam.js'));
 
-
-
-// xhttp = new XMLHttpRequest();
-// xhttp.onreadystatechange = async function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         console.log("Got new access token");
-//         console.log(this.responseText);
-//     }
-// };
-
-// // send POST request to get new access token
-// xhttp.open("POST", "https://api.login.yahoo.com/oauth2/get_token", true);
-// xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-// xhttp.send("client_id=" + secrets.client_id + "&client_secret=" + secrets.client_secret + "&redirect_uri=" + secrets.redirect_uri + "&refresh_token=" + secrets.refresh_token + "&grant_type=refresh_token");
-
-
-
-
-// app.yf = new YahooFantasy(
-//     secrets.clientID,
-//     secrets.clientSecret,
-//     app.tokenCallback,
-//     "https://localhost:3000/auth/yahoo/callback"
-// );
-
-// app.get(
-//     "/auth/yahoo",
-//     (req, res) => {
-//         app.yf.auth(res);
-//     }
-// );
-
-// app.get("/auth/yahoo/callback", (req, res) => {
-//     app.yf.authCallback(req, (err) => {
-//         if (err) {
-//             return res.redirect("/error");
-//         }
-
-//         return res.redirect("/");
-//     });
-// });
-
-// // attempt to get league settings
-// try {
-//     const leagueSettings = app.yf.league.settings(".l.{61609}");
-//     console.log(leagueSettings);
-// } catch (err) {
-//     console.log(err);
-// }
-
+// add yahooSchedule routes
+app.use('/yahooSchedule', require('./public/routes/yahooSchedule.js'));
 
 // receive a POST request from the client
 app.get('/addPlayerToRoster', (req, res) => {
