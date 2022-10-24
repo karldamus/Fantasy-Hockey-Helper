@@ -19,7 +19,8 @@ async function getAllPlayers() {
                 name: player[1].person.fullName,
                 link: player[1].person.link,
                 team: team[1].name,
-                teamID: team[1].id
+                teamID: team[1].id,
+                position: player[1].position
             }
         }
     }
@@ -91,6 +92,8 @@ async function searchForPlayer(name) {
             printPlayer(player[1]);
         }
     }
+
+    console.log(playersFound);
 
     return playersFound;
 }
