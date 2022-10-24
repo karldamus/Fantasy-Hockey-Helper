@@ -3,84 +3,126 @@
         "name": "John Tavares",
         "id": "8475166",
         "team": "Toronto Maple Leafs",
-        "teamID": "10"
+        "teamID": "10",
+        "position": "C"
     },
     "Mikael Granlund": {
         "name": "Mikael Granlund",
         "id": "8475798",
         "team": "Nashville Predators",
-        "teamID": "18"
+        "teamID": "18",
+        "position": "C"
     },
     "Josh Norris": {
         "name": "Josh Norris",
         "id": "8480064",
         "team": "Ottawa Senators",
-        "teamID": "9"
+        "teamID": "9",
+        "position": "C"
     },
     "Jared McCann": {
         "name": "Jared McCann",
         "id": "8477955",
         "team": "Seattle Kraken",
-        "teamID": "55"
+        "teamID": "55",
+        "position": "LW"
     },
     "Alex Ovechkin": {
         "name": "Alex Ovechkin",
         "id": "8471214",
         "team": "Washington Capitals",
-        "teamID": "15"
+        "teamID": "15",
+        "position": "LW"
     },
     "Evander Kane": {
         "name": "Evander Kane",
         "id": "8475169",
         "team": "Edmonton Oilers",
-        "teamID": "22"
+        "teamID": "22",
+        "position": "LW"
     },
     "Andrew Mangiapane": {
         "name": "Andrew Mangiapane",
         "id": "8478233",
         "team": "Calgary Flames",
-        "teamID": "20"
+        "teamID": "20",
+        "position": "LW"
     },
     "William Nylander": {
         "name": "William Nylander",
         "id": "8477939",
         "team": "Toronto Maple Leafs",
-        "teamID": "10"
+        "teamID": "10",
+        "position": "RW"
     },
     "Mitchell Marner": {
         "name": "Mitchell Marner",
         "id": "8478483",
         "team": "Toronto Maple Leafs",
-        "teamID": "10"
+        "teamID": "10",
+        "position": "RW"
+    },
+    "Oliver Bjorkstrand": {
+        "name": "Oliver Bjorkstrand",
+        "id": "8477416",
+        "team": "Seattle Kraken",
+        "teamID": "55",
+        "position": "RW"
     },
     "Jacob Trouba": {
         "name": "Jacob Trouba",
         "id": "8476885",
         "team": "New York Rangers",
-        "teamID": "3"
+        "teamID": "3",
+        "position": "D"
     },
     "Mikhail Sergachev": {
         "name": "Mikhail Sergachev",
         "id": "8479410",
         "team": "Tampa Bay Lightning",
-        "teamID": "14"
+        "teamID": "14",
+        "position": "D"
     },
     "Ryan Pulock": {
         "name": "Ryan Pulock",
         "id": "8477506",
         "team": "New York Islanders",
-        "teamID": "2"
+        "teamID": "2",
+        "position": "D"
     },
     "Hampus Lindholm": {
         "name": "Hampus Lindholm",
         "id": "8476854",
         "team": "Boston Bruins",
-        "teamID": "6"
+        "teamID": "6",
+        "position": "D"
     },
     "Noah Dobson": {
         "name": "Noah Dobson",
         "id": "8480865",
         "team": "New York Islanders",
-        "teamID": "2"
+        "teamID": "2",
+        "position": "D"
+    },
+    "Ilya Samsonov": {
+        "name": "Ilya Samsonov",
+        "id": "8478492",
+        "team": "Toronto Maple Leafs",
+        "teamID": "10",
+        "position": "G"
+    },
+    "Alex Nedeljkovic": {
+        "name": "Alex Nedeljkovic",
+        "id": "8477968",
+        "team": "Detroit Red Wings",
+        "teamID": "17",
+        "position": "G"
+    },
+    "Matt Murray": {
+        "name": "Matt Murray",
+        "id": "8476899",
+        "team": "Toronto Maple Leafs",
+        "teamID": "10",
+        "position": "G"
     }
 }
