@@ -22,7 +22,7 @@ async function addPlayerToRosterFile(player) {
     console.log("Attempting to add " + player.name + " to MY_ROSTER.json");
 
     // send GET request to server to add player to MY_ROSTER.json
-    xhttp.open("GET", "http://localhost:3000/addPlayerToRoster?name=" + player.name + "&id=" + player.id + "&team=" + player.team + "&teamID=" + player.teamID, true);
+    xhttp.open("GET", "http://localhost:3000/addPlayerToRoster?name=" + player.name + "&id=" + player.id + "&team=" + player.team + "&teamID=" + player.teamID + "&position=" + player.position.abbreviation, true);
     xhttp.send();
 }
 
