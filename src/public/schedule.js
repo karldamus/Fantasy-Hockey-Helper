@@ -163,7 +163,7 @@ async function getAndDisplayPlayerStatsAsPopup(playerID, name, isGoalie) {
 
     let stats = playerStats.stats[0].splits[0].stat;
 
-    console.log(stats);
+    // console.log(stats);
 
     let organizedStats = {};
 
