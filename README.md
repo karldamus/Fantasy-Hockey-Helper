@@ -33,6 +33,7 @@ Navigate to http://localhost:3000
 
 # From REQUIREMENTS.txt 
 ```
+heroku login
 git clone https://github.com/Rob--W/cors-anywhere.git
 cd cors-anywhere/
 npm install
