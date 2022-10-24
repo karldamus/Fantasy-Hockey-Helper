@@ -9,6 +9,8 @@ const YahooFantasy = require('yahoo-fantasy');
 const secrets = require('./public/secrets.js');
 const { assert } = require('console');
 
+// var parser = require('xml2json');
+
 app.use(express.static(__dirname + '/public'));
 
 // require secrets from public/secrets.js
@@ -25,6 +27,9 @@ app.use('/yahooTeam', require('./public/routes/yahooTeam.js'));
 
 // add yahooSchedule routes
 app.use('/yahooSchedule', require('./public/routes/yahooSchedule.js'));
+
+// add yahooPlayer routes
+app.use('/yahooPlayers', require('./public/routes/yahooPlayers.js'));
 
 // receive a POST request from the client
 app.get('/addPlayerToRoster', (req, res) => {
