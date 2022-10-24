@@ -1,3 +1,16 @@
+**Monday October 24, 2022**
+
+Yahoo API Functionality:
+- getYahooRoster
+- getYahooMatchups
+- getAllStatsFromPlayersOnRoster
+- getLeagueStandings
+- getAllRosters
+
+Other Updates:
+- switched to Ajax calls instead of previous xhttp
+- cors issue (now fixed)
+
 **Sunday October 23, 2022**
 
 So I decided to get the Yahoo API setup and after OAuth being a pain for a while I managed to do the same amount of work in a single hour that I did all day on Friday. Lessons learned I guess.
