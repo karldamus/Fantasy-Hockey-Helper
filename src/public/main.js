@@ -3,7 +3,7 @@ function hello() {
 }
 
 async function main() {
-    displayScheduleInTable();
+    // displayScheduleInTable();
 }
 
 
