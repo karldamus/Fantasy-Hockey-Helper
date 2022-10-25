@@ -14,6 +14,7 @@ async function getAllPlayers() {
         // go through each player on the team
         for (let player of Object.entries(teamRoster["roster"])) {
             // add player to allPlayers
+            // with only the data we need
             allPlayers[player[1].person.fullName] = {
                 id: player[1].person.id,
                 name: player[1].person.fullName,
@@ -80,20 +81,6 @@ async function searchForPlayer(name) {
     if (Object.keys(playersFound).length == 0) {
         console.log("No players found with input name " + name);
     } 
-    // one player found
-    else if (Object.keys(playersFound).length == 1) {
-        console.log("Found 1 player with input name " + name);
-        printPlayer(playersFound[Object.keys(playersFound)[0]]);
-    } 
-    // multiple players found
-    else {
-        console.log("Found " + Object.keys(playersFound).length + " players with input name " + name);
-        for (let player of Object.entries(playersFound)) {
-            printPlayer(player[1]);
-        }
-    }
-
-    console.log(playersFound);
 
     return playersFound;
 }
