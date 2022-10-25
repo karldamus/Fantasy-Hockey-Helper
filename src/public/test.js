@@ -11,6 +11,17 @@ const team_id = "nhl.l.61609.t.7";
 
 // var parser = require('xml2json');
 
+async function showRosterWithScheduleInIndex() {
+    let roster = await getYahooRoster();
+
+}
+
+async function getYahooTeamSchedule() {
+    let link = base_link + "team/" + team_id + "/games";
+    let schedule = await getDataViaAjax(link, "GET");
+    return schedule;
+}
+
 async function testYahooApi() {
     // // get roster
     // let roster = await getYahooRoster();
@@ -27,15 +38,41 @@ async function testYahooApi() {
     // console.log("Stats:");
     // console.log(stats);
 
-    // get league standings
-    let standings = await getLeagueStandings();
-    console.log("Standings:");
-    console.log(standings);
+    // // get league standings
+    // let standings = await getLeagueStandings();
+    // console.log("Standings:");
+    // console.log(standings);
 
-    // get all team rosters
-    let allRosters = await getAllRosters();
-    console.log("All Rosters:");
-    console.log(allRosters);
+    // // get all team rosters
+    // let allRosters = await getAllRosters();
+    // console.log("All Rosters:");
+    // console.log(allRosters);
+
+    // // get team schedule
+    // let schedule = await getYahooTeamSchedule();
+    // console.log("Schedule:");
+    // console.log(schedule);
+
+    // get all player data from NHL API
+    let allPlayerData = await getAllPlayerDataFromNHLApiOnRoster();
+    console.log("All Player Data:");
+    console.log(allPlayerData);
+    
+}
+
+async function getAllPlayerDataFromNHLApiOnRoster() {
+    let roster = await getYahooRoster();
+    let allPlayerData = {};
+
+    for (let i = 0; i < roster.length; i++) {
+        let player = roster[i];
+        let player_name = player.name.full;
+
+        let player_data = await searchForPlayer(player_name);
+        allPlayerData[player_name] = player_data;
+    }
+
+    return allPlayerData;
 }
 
 
