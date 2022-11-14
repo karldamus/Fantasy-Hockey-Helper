@@ -17,15 +17,75 @@
 
         th, td {
             padding: 5px 10px;
-            border: 0.5px solid black;
+            /* border: 0.5px solid black; */
         }
 
+        .underline {
+            text-decoration: underline;
+        }
+
+        .hover {
+            cursor: pointer;
+        }
+
+        .roster-position-center {
+            color: blue;
+        }
+
+        .roster-position-left-wing {
+            color: green;
+        }
+
+        .roster-position-right-wing {
+            color: red;
+        }
+
+        .roster-position-defense {
+            color: purple;
+        }
+
+        .roster-position-goalie {
+            color: orange;
+        }
+
+        .roster-schedule-played.roster-position-center {
+            background-color:blue;
+        }
+
+        .roster-schedule-played.roster-position-left-wing {
+            background-color:green;
+        }
+
+        .roster-schedule-played.roster-position-right-wing {
+            background-color:red;
+        }
+
+        .roster-schedule-played.roster-position-defense {
+            background-color:purple;
+        }
+
+        .roster-schedule-played.roster-position-goalie {
+            background-color:orange;
+        }
+
+        .popup {
+            position: "absolute";
+            top: "50%";
+            left: "50%";
+            transform: "translate(-50%, -50%)";
+            background-color: "white";
+            border: "1px solid black";
+            padding: "10px";
+            width: "300px";
+            height: "300px";
+        }
 
 
     </style>
 </head>
 <body>
-    <div id="schedule"></div>
+    <div id="roster-table-wrapper"></div>
+    <div id="schedule-table-wrapper"></div>
     <div id="stats"></div>
 </body>
 
@@ -34,6 +94,7 @@
 <script src="xml2json.js"></script>
 
 <script src="CONSTANTS.js"></script>
+<script src="data/nhl_teams.js"></script>
 
 <script src="secrets.js"></script>
 <script src="verification.js"></script>

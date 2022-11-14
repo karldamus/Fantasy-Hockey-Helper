@@ -24,11 +24,13 @@ async function getStatsForRosterFromTeamId(team_id) {
 
 async function getStatsForPlayerFromKey(player_key) {
     let link = yahoo_constants.base_link + "/league/" + yahoo_constants.league_id + "/players;player_keys=" + player_key + "/stats";
-    let stats = await getData(link, "GET");
+    let stats = await getYahooData(link, "GET");
     let detailed_stats = labelStats(stats.fantasy_content.league.players.player.player_stats.stats.stat);
+    let display_position = stats.fantasy_content.league.players.player.display_position;
 
     // add fantasy points converted to number
     detailed_stats["FP"] = Number(stats.fantasy_content.league.players.player.player_points.total);
+    detailed_stats["display_position"] = display_position;
 
     return detailed_stats;
 }
@@ -39,20 +41,7 @@ function labelStats(stats) {
 
     for (let i = 0; i < stats.length; i++) {
         let stat = stats[i];
-        let stat_name = "";
-        switch(stat.stat_id) {
-            case '1': stat_name = "G"; break;
-            case '2': stat_name = "A"; break;
-            case '8': stat_name = "PPP"; break;
-            case '14': stat_name = "SOG"; break;
-            case '32': stat_name = "BLK"; break;
-            case '19': stat_name = "W"; break;
-            case '22': stat_name = "GA"; break;
-            case '25': stat_name = "SV"; break;
-            case '27': stat_name = "SHO"; break;
-
-            default: stat_name = stat.stat_id; break;
-        }
+        let stat_name = yahoo_nhl_stat_id_map[stat.stat_id];
 
         stats_detailed[stat_name] = Number(stat.value);
     }

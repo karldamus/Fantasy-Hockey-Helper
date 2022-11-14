@@ -5,7 +5,7 @@ async function getRoster() {
 
 async function getRosterFromTeamId(team_id) {
     let rosterLink = yahoo_constants.base_link + "/team/" + yahoo_constants.league_id + ".t." + team_id + "/roster";
-    let roster = await getData(rosterLink, "GET");
+    let roster = await getYahooData(rosterLink, "GET");
     return roster.fantasy_content.team.roster.players.player;
 }
 
